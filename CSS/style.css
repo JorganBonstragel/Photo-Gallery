@@ -29,15 +29,14 @@
   margin:0 auto;
   max-width: 80%;
   display: grid;
-  grid-gap: 1em;
-  grid-template-columns: repeat(4, auto);
-  grid-auto-rows: 1fr;
-    
+  grid-gap: .5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, .5fr));
+  justify-items: center;
 }
 
 .gallery img{
   max-width:300px;
-  max-height: 300px;
+  max-height: 260px;
   overflow: hidden;
   
 }
