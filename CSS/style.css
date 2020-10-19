@@ -1,0 +1,45 @@
+/* Root Properties  */
+*{
+  box-sizing: border-box;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+/*------Search Bar--------*/
+.search-wrapper{
+  margin:0 auto;
+  width:80%;
+  display:flex;
+  place-items: center;
+  height:10em;
+ 
+}
+
+#search{
+  margin:0 auto;
+  width: 50%;
+  height: 4em;
+  border: solid 4px #5fcf80;
+  border-radius: 20px;
+  text-align: center;
+  font-size: large;
+}
+
+/* ------Grid----------- */
+.gallery {
+  margin:0 auto;
+  max-width: 80%;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(4, auto);
+  grid-auto-rows: 1fr;
+    
+}
+
+.gallery img{
+  max-width:300px;
+  max-height: 300px;
+  overflow: hidden;
+  
+}
+
+
