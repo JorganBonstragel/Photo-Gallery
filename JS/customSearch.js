@@ -1,25 +1,23 @@
 //get user input 
-let userInput = document.getElementById('search');
-let gallery = document.getElementsById('gallery');
+let userInput = document.getElementById('user_search');
+let gallery = document.getElementById('gallery');
 
-
-// searchable terms
 
 // User input value
-searchBox.addEventListener("keyup", e => { 
+user_search.addEventListener("keyup", e => { 
     const searchString = e.target.value.toUpperCase(); 
+    console.log([userInput])
+// for any input check the data caption (upperCase sensitive)
+for (let count = 0; count < gallery.length; count++) {
+    const userInput = gallery[count].getAttribute('data-caption').toUpperCase()
     
-    // for any input check the data caption (upperCase sensitive)
-    for (let i = 0; i < gallery.length; i++) {
-        const userInput = gallery[i].getAttribute('data-caption').toUpperCase()
-
-        // if user includes letters or name block the image on screen
-        if (userInput.includes(searchString)) {
-            gallery[i].style.display = 'block';
+// if user includes letters or name block the image on screen
+     if (userInput.includes(searchString)) {
+        gallery[count].style.display = 'block';
             
-            // if nothing matches display no image
-        } else {
-            gallery[i].style.display = 'none';
+// if nothing matches display no image
+    } else {
+        gallery[count].style.display = 'none';
         }
     }
 });

@@ -14,7 +14,7 @@
  
 }
 
-#search{
+#user_search{
   margin:0 auto;
   width: 50%;
   height: 4em;
@@ -45,7 +45,7 @@
 
 
 /* ----transitions and animations----*/
-#search:focus{
+#user_search:focus{
   background:#d9f1f7;
   border-color:#39f79e;
   color: #939394;

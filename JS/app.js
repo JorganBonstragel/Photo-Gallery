@@ -3,10 +3,12 @@ window.addEventListener('load', function() {
     baguetteBox.run('.gallery');
 });
 
-// search function variable
+//--------Search Function-------------
 //const search = new Filter('search', 'data-caption');
 
 
+
+//----------GENERATE CONTENT-----------
 //store captions in variables
 const Hay = "I love hay bales. Took this snap on a drive through the countryside past some straw fields.";
 const Lake = "The lake was so calm today. We had a great view of the snow on the mountains from here.";
@@ -27,10 +29,11 @@ let images = new Array(Hay, Lake, Canyon, Iceberg, Desert, Fall, Plantation, Dun
 let imagesAlt = new Array("Hay", "Lake", "Canyon", "Iceberg", "Desert", "Fall", "Plantation", "Dunes", "Countryside", "Sunset", "Cave", "Bluebells");
 
 //generate grid items from arrays (I hope)
-for (let count = 1; count <= 12; count++ ){
+for (let count = 0; count <= 11; count++ ){
         document.getElementById("gallery").innerHTML += `
         <a href="photos/${count}.jpg" data-caption="${images[count]}">
         <img src="photos/thumbnails/${count}.jpg" alt="${imagesAlt[count]}">
         </a>
         `;
+       
 }
