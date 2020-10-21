@@ -3,10 +3,6 @@ window.addEventListener('load', function() {
     baguetteBox.run('.gallery');
 });
 
-//--------Search Function-------------
-//const search = new Filter('search', 'data-caption');
-
-
 
 //----------GENERATE CONTENT-----------
 //store captions in variables
